@@ -8,10 +8,10 @@ import (
 	"github.com/gorilla/pat"
 	"github.com/gorilla/websocket"
 	"github.com/jcelliott/lumber"
-	"github.com/nanobox-io/golang-nanoauth"
+	"github.com/mu-box/golang-microauth"
 
-	"github.com/nanopack/mist/auth"
-	"github.com/nanopack/mist/core"
+	"github.com/mu-box/mist/auth"
+	"github.com/mu-box/mist/core"
 )
 
 // init adds ws/wss as available mist server types
@@ -264,5 +264,5 @@ func StartWSS(uri string, errChan chan<- error) {
 	})
 
 	lumber.Info("WSS server listening at '%s'...\n", uri)
-	nanoauth.ListenAndServeTLS(uri, "", router)
+	microauth.ListenAndServeTLS(uri, "", router)
 }

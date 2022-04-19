@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/url"
 
-	scribbleDB "github.com/nanobox-io/golang-scribble"
+	scribbleDB "github.com/mu-box/golang-scribble"
 )
 
 type (
