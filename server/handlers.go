@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/nanopack/mist/core"
+	"github.com/mu-box/mist/core"
 )
 
 // GenerateHandlers ...

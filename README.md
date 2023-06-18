@@ -1,6 +1,5 @@
-# Mist
-
-[![Build Status](https://travis-ci.org/nanopack/mist.svg)](https://travis-ci.org/nanopack/mist)
+[![mist logo](http://microbox.rocks/assets/readme-headers/mist.png)](http://microbox.cloud/open-source#mist)
+[![Build Status](https://github.com/mu-box/mist/actions/workflows/ci.yaml/badge.svg)](https://github.com/mu-box/mist/actions)
 
 Mist is a simple pub/sub based on the idea that messages are tagged. To subscribe, a client simply constructs a list of tags that it is interested in, and all messages that are tagged with *all* of those tags are sent to that client.
 
@@ -55,7 +54,7 @@ Each Message has a set of `tags` and `data`. Tags can take any form you like, as
 
 ``` json
 {
-  "tags": ["company:pagodabox", "product:mist", "repo:#nanopack"],
+  "tags": ["company:microbox", "product:mist", "repo:#mu-box"],
   "data": "Mist is awesome!"
 }
 ```
@@ -130,7 +129,7 @@ Like `listeners`, mist allows for the registration of custom `authenticators`.
 | Authenticator | URI scheme | description
 | --- | --- | --- |
 | memory | `memory://` | an in memory store |
-| [scribble](https://github.com/nanobox-io/golang-scribble) | `scribble://?db=/tmp` | a tiny JSON database |
+| [scribble](https://github.com/mu-box/golang-scribble) | `scribble://?db=/tmp` | a tiny JSON database |
 | postgres | `postgres://postgres@127.0.0.1:5432?db=postgres` | n/a |
 
 #### Connecting to an authenticated server
@@ -186,7 +185,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/nanopack/mist/clients"
+	"github.com/mu-box/mist/clients"
 )
 
 func main() {
@@ -283,6 +282,6 @@ Or you can just pass any configuration options as flags:
 
 ## Contributing
 
-Contributions to mist are welcome and encouraged. Mist is a [Nanobox](https://nanobox.io) project and contributions should follow the [Nanobox Contribution Process & Guidelines](https://docs.nanobox.io/contributing/).
+Contributions to mist are welcome and encouraged. Mist is a [Microbox](https://microbox.cloud) project and contributions should follow the [Microbox Contribution Process & Guidelines](https://docs.microbox.cloud/contributing/).
 
-[![open source](http://nano-assets.gopagoda.io/open-src/nanobox-open-src.png)](http://nanobox.io/open-source)
+[![open source](http://microbox.rocks/assets/open-src/microbox-open-src.png)](http://microbox.cloud/open-source)

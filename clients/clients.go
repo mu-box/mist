@@ -9,7 +9,7 @@ import (
 
 	"github.com/jcelliott/lumber"
 
-	"github.com/nanopack/mist/core"
+	"github.com/mu-box/mist/core"
 )
 
 type (

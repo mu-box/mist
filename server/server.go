@@ -8,7 +8,7 @@ import (
 
 	"github.com/jcelliott/lumber"
 
-	"github.com/nanopack/mist/auth"
+	"github.com/mu-box/mist/auth"
 )
 
 var (
