@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/deckarep/golang-set v0.0.0-20171013212420-1d4478f51bed
 	github.com/gorilla/pat v0.0.0-20180118222023-199c85a7f6d1
-	github.com/gorilla/websocket v1.2.1-0.20180306181548-eb925808374e
+	github.com/gorilla/websocket v1.5.3
 	github.com/jcelliott/lumber v0.0.0-20160324203708-dd349441af25
 	github.com/lib/pq v0.0.0-20180201184707-88edab080323
 	github.com/mu-box/golang-microauth v0.0.0-20220418115140-a7200e5d2be7
